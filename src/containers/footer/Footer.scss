@@ -1,0 +1,99 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .footer-heading{
+        padding: 1rem;
+        margin-bottom: 2rem;
+        max-width: 900px;
+        font-size: 1.5rem;
+        font-family: var(--font-family);
+        text-align: center;
+        font-weight: 800;
+
+    }
+    .footer-btn{
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border: solid 1px #fff;
+        color: var(--color-subtext);
+        cursor: pointer;
+    }
+    .footer-btn:hover{
+        background: var(--color-bg);
+    }
+    @media(max-width: 768px){
+      .footer-heading{
+            font-size: 1rem;
+        }
+    }
+    @media(max-width: 576px){
+     .footer-heading{
+            font-size: 0.8rem;
+        }
+    }
+    .footer-links{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem;
+
+        .footer-links-logo{
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            color: #fff;
+            margin-bottom: 1rem;
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .footer-links01{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            color: #fff;
+            font-family: var(--font-family);
+            div{
+                height: 2px;
+                width: 50px;
+                background: var(--gradient-text);
+                margin-bottom: -0.75rem;
+                box-shadow: 0 0 4px var(--color-subtext);
+            }
+        }
+        .footer-links02{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 1rem;
+            color: #fff;
+            font-family: var(--font-family);
+            div{
+                height: 2px;
+                width: 50px;
+                background: var(--gradient-text);
+                margin-bottom: -0.75rem;
+                box-shadow: 0 0 4px var(--color-subtext);
+            }
+        }
+    }
+    @media(max-width: 550px){
+      .footer-links{
+            flex-direction: column;
+            .footer-links01{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+}

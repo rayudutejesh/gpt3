@@ -1,0 +1,52 @@
+.cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: var(--gradient-bar);
+    border-radius: 10px;
+    .cta-content{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        h1{
+            font-family: var(--font-family);   
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.2;
+
+        }
+        p{
+            font-family: var(--font-family);
+            font-size: 0.75rem;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+    }
+
+    button{
+        padding: 0.5rem 1rem;
+        color: #fff;
+        background-color: black;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.5s;
+        outline: none;
+        font-family: var(--font-family);
+    }
+    button:hover{
+        background-color: var(--color-footer);
+        color: var(--color-subtext);
+    }
+}
+
+@media screen and (max-width:550px) {
+    .cta{
+        display : flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        margin-top: 0;
+    }
+}

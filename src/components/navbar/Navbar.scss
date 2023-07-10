@@ -1,0 +1,189 @@
+.gpt3__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem 6rem;
+
+    .gpt3__navbar-links {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .gpt3__navbar-links_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+
+            p {
+                color: #fff;
+                font-family: var(--font-family);
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+                text-transform: capitalize;
+                cursor: pointer;
+                margin: 0 1rem;
+            }
+        }
+
+        @media screen and (max-width: 1050px) {
+            .gpt3__navbar-links_container {
+                display: none;
+            }
+        }
+    }
+
+    .gpt3__navbar_sign {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        p {
+            color: #fff;
+            font-family: var(--font-family);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            text-transform: capitalize;
+            cursor: pointer;
+            margin: 0 1rem;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            color: #fff;
+            background: #ff4820;
+            font-family: var(--font-family);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        .gpt3__navbar_sign {
+            display: none;
+        }
+    }
+    .gpt3__navbar-links_logo {
+        margin-right: 2rem;
+
+        img {
+            width: 62.52px;
+            height: 16.02;
+        }
+    }
+
+    .gpt3__navbar-menu {
+        margin-left: 1rem;
+        display: none;
+        position: relative;
+
+        svg {
+            cursor: pointer;
+        }
+
+        .gpt3__navbar-menu_container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex-direction: column;
+
+            text-align: end;
+            background: var(--color-footer);
+            position: absolute;
+            top: 40px;
+            right: 0;
+            margin-top: 1rem;
+            padding: 2rem;
+            min-width: 210px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+            p {
+                margin: 1rem 0;
+            }
+
+            .gpt3__navbar-menu_container-links_sign {
+                display: none;
+
+                button {
+                    padding: 0.5rem 1rem;
+                    color: #fff;
+                    background: #ff4820;
+                    font-family: var(--font-family);
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                .gpt3__navbar-menu_container-links_sign {
+                    display: block;
+                }
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .gpt3__navbar-menu_container{
+                top: 20px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        .gpt3__navbar-menu {
+            display: flex;
+
+            p {
+                color: #fff;
+                font-family: var(--font-family);
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+                text-transform: capitalize;
+                cursor: pointer;
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .gpt3__navbar-menu {
+            display: flex;
+
+            p {
+                color: #fff;
+                font-family: var(--font-family);
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+                text-transform: capitalize;
+                cursor: pointer;
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .gpt3__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gpt3__navbar {
+        padding: 2rem;
+    }
+}
